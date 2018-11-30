@@ -5,8 +5,6 @@ pyhon爬虫
 1.TypeError: Object of type 'bytes' is not JSON serializable  
 解决办法：可以自己写一个编码类
 `  
-# -*- coding: utf-8 -*-  
- 
 import json  
  
  
