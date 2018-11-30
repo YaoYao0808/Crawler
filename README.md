@@ -20,7 +20,7 @@ class MyEncoder(json.JSONEncoder):
             return str(obj, encoding='utf-8')  
         return json.JSONEncoder.default(self, obj)    
  `  
- 2.代码运行环境用pycahrm，但是在成功爬虫，tecent.json用pycahrm乱码  
+ 2.代码运行环境用的pycahrm，但是在成功爬虫后，tecent.json用pycahrm打开却是乱码  
  解决办法：  
  （1）改变pycharm对于该文件的编码，改为“GBK”  
  （2）换一个编辑器打开，如notepad
