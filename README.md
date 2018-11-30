@@ -1,7 +1,16 @@
 # Crawler
-pyhon爬虫
+pyhon爬虫  
 
-报错解决：
+## Scrapy框架使用流程：  
+scrapy startproject xxx  
+scrapy genspider xxx "http://www.xxx.com"  
+编写items.py，明确需要爬取的数据  
+编写spiders/xxx.py，编写爬虫文件，处理请求和相应，以及提取数据（yield item）  
+编写pipelines.py，编写管道文件，处理spider返回的item数据，比如本地持久化存储等  
+编写setting.py,启动管道文件，以及其他相关设置  
+启动爬虫  
+
+## 报错解决：
 1.TypeError: Object of type 'bytes' is not JSON serializable  
 解决办法：可以自己写一个编码类
 `  
